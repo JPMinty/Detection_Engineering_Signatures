@@ -1,0 +1,1 @@
+alert tcp any any -> any any (msg:"STRRAT C2 Beacon Detected"; content:"|70 69 6e 67 7c 53 54 52 52 41 54|"; priority:2; reference:url, www.jaiminton.com/reverse-engineering/strrat;sid:1120009; rev:1;)
