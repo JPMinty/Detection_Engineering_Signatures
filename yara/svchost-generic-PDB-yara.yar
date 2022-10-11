@@ -11,5 +11,5 @@ rule svchost_generic_PDB  {
       $s3 = /\\Debug\\.{,20}svchost.{,10}.pdb/
       $s4 = /\\Release\\.{,20}svchost.{,10}.cpp/
    condition:
-      uint16(0) == 0x5a4d and filesize < 5000KB and 1 of them
+      uint16(0) == 0x5a4d and filesize < 1000KB and 1 of them
 }
