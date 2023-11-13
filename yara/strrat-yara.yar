@@ -26,8 +26,8 @@ rule STRRAT_14 {
 	  $rat1 = "HBrowserNativeApis" fullword ascii
 	  $rat2 = "carLambo" fullword ascii
 	  $rat3 = "config" fullword ascii
-	  $rat4 = "loorqhustq" fullword ascii
-	  
+	  $rat4 = "loorqhustq" ascii
+	  $rat5 = "JokerGame" fullword ascii
    condition:
-	  filesize < 2000KB and (2 of ($ntwk*) or (1 of ($host*) and 2 of ($rat*)))
+	  filesize < 2000KB and (2 of ($ntwk*) or 2 of ($host*) or 2 of ($rat*))
 }
