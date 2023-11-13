@@ -29,5 +29,5 @@ rule STRRAT_14 {
 	  $rat4 = "loorqhustq" fullword ascii
 	  
    condition:
-	  filesize < 2000KB and (2 of ($ntwk*) or all of ($host*) or 2 of ($rat*))
+	  filesize < 2000KB and (2 of ($ntwk*) or (1 of ($host*) and 2 of ($rat*)))
 }
