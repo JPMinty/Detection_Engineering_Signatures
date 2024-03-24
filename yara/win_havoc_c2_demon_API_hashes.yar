@@ -77,5 +77,5 @@ rule win_havoc_c2_demon_API_hashes {
 		$API_NtQueryObject = {b4 c9 5d c8} //NtQueryObject
 		$API_NtTraceEvent = {d8 5c c2 70} //NtTraceEvent
 	condition:
-		filesize < 1000KB and (uint16(0) == 0x5a4d) and (4 of them)
+		filesize < 1000KB and (uint16(0) == 0x5a4d) and (2 of them)
 }

@@ -12,8 +12,7 @@ rule STRRAT_14 {
 	  author = "Jai Minton (@CyberRaiju)"
 	  reference = "https://www.jaiminton.com/reverse-engineering/strrat"
 	  date = "2022-05-19"
-	  hash1 = "ec48d708eb393d94b995eb7d0194bded701c456c666c7bb967ced016d9f1eff5"
-	  hash2 = "0A6D2526077276F4D0141E9B4D94F373CC1AE9D6437A02887BE96A16E2D864CF"
+	  hash1 = "0A6D2526077276F4D0141E9B4D94F373CC1AE9D6437A02887BE96A16E2D864CF"
    strings:
 	  $ntwk1 = "wshsoft.company" fullword ascii
 	  $ntwk2 = "str-master.pw" fullword ascii
@@ -26,8 +25,8 @@ rule STRRAT_14 {
 	  $rat1 = "HBrowserNativeApis" fullword ascii
 	  $rat2 = "carLambo" fullword ascii
 	  $rat3 = "config" fullword ascii
-	  $rat4 = "loorqhustq" fullword ascii
-	  
+	  $rat4 = "loorqhustq" ascii
+	  $rat5 = "JokerGame" fullword ascii
    condition:
-	  filesize < 2000KB and (2 of ($ntwk*) or all of ($host*) or 2 of ($rat*))
+	  filesize < 2000KB and (2 of ($ntwk*) or 2 of ($host*) or 2 of ($rat*))
 }
