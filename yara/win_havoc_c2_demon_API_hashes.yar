@@ -13,10 +13,11 @@ rule win_havoc_c2_demon_API_hashes {
 		reference = "https://www.youtube.com/@cyberraiju/playlists"
 		date = "2024-03-18"
 		hash1 = "0bc017b4114310f023c4b965271b4d089b467dfd55c2cd32d0814afc08ff488a"
-		hash2 = "0091fc0f9709bc7437f01078aaf1f2a2f52e603a9d4960a0eb73ed9d1fbbe46f"
-		hash3 = "0093ebec3baf00a0cfa667cfd87863e22634594cddbaa76a105781e457fcea3e"
-		hash4 = "0127f75095e4d69c9bc3bb04a271ad16f714d95b29a4fbde991aee3bf620d242"
-		hash5 = "02565bb6bb8e5d74f38ca7c686ca789ae62f470c12f1ab4dd1052624f2fd0e11"
+		hash2 = "b953ef3b1dd6e08d2179ae23624e0051c15754656d97fb8ca2461416360b05bf"
+		hash3 = "068c44d322748e817b3609e263c9b276d5b12e8ff5e8ad66b296e21d5646011e"
+		hash4 = "35ef0c05bc16af0420825f12b812ca0df56172b3807480d39a2042f090174cb3"
+		hash5 = "a78a8dd4f4f4a99387e2f26b2b20d10d0647a3cfde19619bb250650998abd7f3"
+		hash6 = "f81af020d914b0c32c5a5e70735d1a3498be73328f82d77d63f2a20c05809017"
 	strings:
 		$ntdll_hash = {53 17 e6 70} //Ntdll
 		$API_LdrGetProcedureAddress = {b6 6b e7 fc} //LdrGetProcedureAddress
