@@ -1,4 +1,5 @@
 ![Detection Engineering Logo](https://www.jaiminton.com/assets/images/DetectEng.jpg)
+
 # Detection Engineering Signatures
 YARA, SIGMA, and SNORT Rules based on Malware Analysis
 
