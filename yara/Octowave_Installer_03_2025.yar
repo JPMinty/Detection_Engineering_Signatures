@@ -15,6 +15,7 @@ rule Octowave_Installer_03_2025
         hash6 = "d7816ba6ddda0c4e833d9bba85864de6b1bd289246fcedae84b8a6581db3f5b6"
         hash7 = "c51c230e0504d92de1358f2f6772a6e5abe6dd205bbc6a2ef5f5561bb4b02c6d"
         hash8 = "5ee9e74605b0c26b39b111a89139d95423e54f7a54decf60c7552f45b8b60407"
+        id = "56685a0a-523d-4060-a008-aa28542cb85c"
     strings:
         $resource_id1 = "fil027F8070E5296A7A6BE029B225291BE6" ascii
         $resource_id2 = "fil1E34AA08E451E369856CB0A4F2C939EE" ascii

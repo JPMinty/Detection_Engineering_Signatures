@@ -12,6 +12,7 @@ rule Octowave_Loader_03_2025
         hash3 = "EB50D06057FE123D6E9F7A76D3D1A4BC5307E8F15D017BE8F6031E92136CF36A"
         hash4 = "24715920E749B014BA05F74C96627A27355C5860A14461C106AA48A7ABA371EA"
         shoutout = "https://yaratoolkit.securitybreak.io/"
+        id = "84d9f24f-154e-4fef-b6ba-a2e051aa5842"
 	/*
 	0x5bb1d 55                            push ebp
 	0x5bb1e 8BEC                          mov ebp, esp
