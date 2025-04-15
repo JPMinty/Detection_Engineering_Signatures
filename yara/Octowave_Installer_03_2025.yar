@@ -15,6 +15,7 @@ rule Octowave_Installer_03_2025
         hash6 = "d7816ba6ddda0c4e833d9bba85864de6b1bd289246fcedae84b8a6581db3f5b6"
         hash7 = "e93969a57ef2a7aee13a159cbf2015e2c8219d9153078e257b743d5cd90f05cb"
         hash8 = "45984ae78d18332ecb33fe3371e5eb556c0db86f1d3ba8a835b72cd61a7eeecf"
+        Hash9 = "141a69449a580ac432961df0ca05a277579a97e1a1482b1ffe2485d3c63f9aa7"
         id = "56685a0a-523d-4060-a008-aa28542cb85c"
     strings:
         $string1 = "LaunchConditionsValidateProductIDProcessComponentsUnpublishFeaturesRemoveFilesRegisterUserRegisterProductInstalled OR PhysicalMemory >= 2048" ascii
@@ -28,6 +29,7 @@ rule Octowave_Installer_03_2025
         $supporting4 = ".bin" ascii
         $supporting5 = ".bak" ascii
         $supporting6 = ".dat" ascii
+        $supporting7 = ".sav" ascii
     condition:
         (uint32(0) == 0xe011cfd0)
         and filesize < 200000KB
