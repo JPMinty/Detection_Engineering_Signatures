@@ -1,5 +1,5 @@
 
-![DetectEng](https://github.com/user-attachments/assets/188d5f4c-31db-4fb2-9b12-c7bd0b22fd00)
+![DetectEng](https://www.jaiminton.com/assets/images/DetectEng.jpg)
 
 # Detection Engineering Signatures
 YARA, SIGMA, and SNORT Rules based on Malware Analysis
